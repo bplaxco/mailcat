@@ -1,0 +1,12 @@
+#! /bin/bash
+
+PORT=25
+
+mkdir -p $1
+var=0
+
+while true; do
+  mailcat $PORT > $1"/"$var
+  ln -nfs "./"$var $1"/latest"
+  var=$((var+1))
+done

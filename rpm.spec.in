@@ -1,0 +1,21 @@
+Name:           %PKGNAME%
+Version:        %VERSION%
+Release:        %RELEASE%
+Summary:        Receive mail and print to stdout
+Source0:        %PKGNAME%-%VERSION%.tar.gz
+License:        BSD
+Group:          Development/Libraries
+
+%description
+Receive mail and print to stdout
+
+%prep
+%autosetup
+
+%install
+%make_install
+
+%files
+/usr/bin/%PKGNAME%
+
+%changelog

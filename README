@@ -1,0 +1,19 @@
+                                    mailcat
+
+Mailcat is a program that will listen on a designated port and receive emails
+printing to stdout.
+
+It is still mainly a work in progress, but is a tool I'm working on for work
+to log emails from our applications
+
+
+EXAMPLE
+
+while true; do
+  mailcat 25 > "./logs/"$(date +%s)
+done
+
+RPMS
+
+* Lupnix Repo - http://repo.lupnix.org/
+* Repo File - http://repo.lupnix.org/lupnix-rpm-fedora.repo
